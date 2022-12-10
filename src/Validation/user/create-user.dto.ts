@@ -15,6 +15,7 @@ export class CreateUserDto {
     )
     email: string;
 
+    @ApiProperty()
     @JoiSchema(Joi.string().length(11).required())
     cpf: string
   
